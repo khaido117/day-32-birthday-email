@@ -1,16 +1,14 @@
 import smtplib
-from email.mime.text import MIMEText
 import random
 import datetime as dt
 
 MY_EMAIL = "khaitroyy@gmail.com"
 PASSWORD = "wzhwcympfdytnkdf"
-
 TO_EMAIL = "khaido12365@gmail.com"
 
 #----------
 
-with open("quotes.txt", mode = "r") as file:
+with open("/Users/khaido/Library/CloudStorage/GoogleDrive-khaitroyy@gmail.com/My Drive/Code/day-32-birthday-email/birthday/quotes.txt", mode = "r") as file:
     list_quotes = file.readlines()
     random_quote = random.choice(list_quotes)
 
@@ -31,7 +29,7 @@ def send_email():
 
 now = dt.datetime.now()
 weekday = now.weekday()
-if weekday == 6:
+if weekday == 0:
     send_email()
 #------------------------------
 
