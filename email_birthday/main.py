@@ -1,5 +1,3 @@
-##################### Extra Hard Starting Project ######################
-
 from datetime import datetime
 import pandas 
 import smtplib
