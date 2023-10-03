@@ -6,7 +6,7 @@ import random
 #1 Get the today month date
 today = (datetime.now().month, datetime.now().day)
 
-data = pandas.read_csv("/Users/khaido/Library/CloudStorage/GoogleDrive-khaitroyy@gmail.com/My Drive/Code/day-32-birthday-email/birthday-wisher-extrahard-start/birthdays.csv")
+data = pandas.read_csv("/Users/khaido/Library/CloudStorage/GoogleDrive-khaitroyy@gmail.com/My Drive/Code/day-32-birthday-email/email_birthday/birthdays.csv")
  
 birthday_dict = {(data_row["month"], data_row["day"]):data_row for (index, data_row) in data.iterrows()}
 

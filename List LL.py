@@ -1,15 +1,8 @@
-LL = [1,[2,[3,[4, None]]]]
-ptr = LL
-while ptr != None:
-    [val, next] = ptr
-    print(val)
-    ptr = next
-
-
 LL = [1, [2, [3, [4, None]]]]
 ptr = LL
 
-while ptr is not None:
+# Traverse the linked list to find the value 2
+while ptr != None:
     if ptr[0] == 2:
         # Ask the user for the new value to insert
         new_value = int(input("Enter a value to insert after 2: "))
